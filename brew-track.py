@@ -83,8 +83,6 @@ def autoremove_pkgs():
             line_pkg, line_deps = line.split(":")
             deps[line_pkg] = line_deps.split()
 
-    print(deps)
-
     visited = set()
 
     for pkg in manual_pkgs:
